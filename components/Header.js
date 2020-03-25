@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
 import Link from "next/link";
 const Header = props => {
   return (
     <React.Fragment>
-      <header className="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp" id="mh-header" >
+      <header
+        className="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp"
+        id="mh-header"
+      >
         <div className="overlay"></div>
         <div className="container">
           <div className="row">
@@ -20,62 +23,73 @@ const Header = props => {
                 <span className="navbar-toggler-icon icon"></span>
               </button>
 
-              <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <div
+                className="collapse navbar-collapse"
+                id="navbarSupportedContent"
+              >
                 <ul className="navbar-nav mr-auto ml-auto">
-                  <li className="nav-item" className={ 'home' === props.page ? 'active' : '' }>
+                  <li
+                    className="nav-item"
+                    className={props.page === 'home'  ? "active" : ""}
+                  >
                     <Link href="/">
-                      <a className="nav-link" href="#mh-home">
-                        Home
-                      </a>
+                      <a className="nav-link">Home</a>
                     </Link>
                   </li>
-                  <li className="nav-item" className={ 'about' === props.page ? 'active' : '' }>
+                  <li
+                    className="nav-item"
+                    className={"about" === props.page ? "active" : ""}
+                  >
                     <Link href="/about">
-                    <a className="nav-link" href="#mh-about">
-                    About
-                    </a>
+                      <a className="nav-link">About</a>
                     </Link>
-                    </li>
-                    <li className="nav-item" className={ 'skills' === props.page ? 'active' : '' }>
+                  </li>
+                  <li
+                    className="nav-item"
+                    className={"skills" === props.page ? "active" : ""}
+                  >
                     <Link href="/skills">
-                    <a className="nav-link" href="#mh-skills">
-                    Skills
-                    </a>
-                  </Link>
-                  </li>
-                  <li className="nav-item" className={ 'experiences' === props.page ? 'active' : '' }>
-                  <Link href="/experiences">
-                  <a className="nav-link" href="#mh-experience">
-                  Experiences
-                  </a>
-                  </Link> 
-                  </li>
-                  <li className="nav-item" className={ 'portfolio' === props.page ? 'active' : '' }>
-                  <Link href="/portfolio">
-                  <a className="nav-link" href="#mh-portfolio">
-                  Portfolio
-                    </a>
+                      <a className="nav-link">Skills</a>
                     </Link>
-                    </li>
-                    <li className="nav-item" className={ 'pricing' === props.page ? 'active' : '' }>
+                  </li>
+                  <li
+                    className="nav-item"
+                    className={"experiences" === props.page ? "active" : ""}
+                  >
+                    <Link href="/experiences">
+                      <a className="nav-link">Experiences</a>
+                    </Link>
+                  </li>
+                  <li
+                    className="nav-item"
+                    className={"portfolio" === props.page ? "active" : ""}
+                  >
+                    <Link href="/portfolio">
+                      <a className="nav-link">Portfolio</a>
+                    </Link>
+                  </li>
+                  <li
+                    className="nav-item"
+                    className={"pricing" === props.page ? "active" : ""}
+                  >
                     <Link href="/pricing">
-                    <a className="nav-link" href="#mh-pricing">
-                    Pricing
-                    </a>
+                      <a className="nav-link">Pricing</a>
                     </Link>
-                    </li>
-                    <li className="nav-item" className={ 'blog' === props.page ? 'active' : '' }>
+                  </li>
+                  <li
+                    className="nav-item"
+                    className={"blog" === props.page ? "active" : ""}
+                  >
                     <Link href="/blog">
-                    <a className="nav-link" href="#mh-blog">
-                    Blog
-                    </a>
+                      <a className="nav-link">Blog</a>
                     </Link>
-                    </li>
-                    <li className="nav-item" className={ 'contact' === props.page ? 'active' : '' }>
+                  </li>
+                  <li
+                    className="nav-item"
+                    className={"contact" === props.page ? "active" : ""}
+                  >
                     <Link href="/contact">
-                    <a className="nav-link" href="#mh-contact">
-                      Contact
-                    </a>
+                      <a className="nav-link">Contact</a>
                     </Link>
                   </li>
                 </ul>
