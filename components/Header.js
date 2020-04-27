@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-const Header = props => {
+const Header = (props) => {
   return (
     <React.Fragment>
       <header
@@ -30,7 +30,7 @@ const Header = props => {
                 <ul className="navbar-nav mr-auto ml-auto">
                   <li
                     className="nav-item"
-                    className={props.page === 'home'  ? "active" : ""}
+                    className={props.page === "home" ? "active" : ""}
                   >
                     <Link href="/">
                       <a className="nav-link">Home</a>

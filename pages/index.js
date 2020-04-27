@@ -87,22 +87,22 @@ const Home = (props) => {
                     data-wow-delay="0.7s"
                   >
                     <li>
-                      <a href="{data.facebook}">
+                      <a href={data.facebook} target="_blank">
                         <i className="fa fa-facebook"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="{data.twitter}">
+                      <a href={data.twitter} target="_blank">
                         <i className="fa fa-twitter"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="{data.github}">
+                      <a href={data.github} target="_blank">
                         <i className="fa fa-github"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="{data.instagram}">
+                      <a href={data.instagram} target="_blank">
                         <i className="fa fa-instagram"></i>
                       </a>
                     </li>
