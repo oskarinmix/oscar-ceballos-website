@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Layout from "../components/Layout";
-const Home = props => {
+import InstaFeed from "./instagram";
+import GalleryInstagram from "../components/GalleryInstagram";
+const Home = (props) => {
   const [data, setData] = useState({
     name: "Oscar A. Ceballos",
     title: "Frontend Engineer",
@@ -8,16 +10,23 @@ const Home = props => {
     address: "Mérida, Venezuela",
     image: "/assets/images/hero.png",
     phone: "+58 412 0642004",
-    facebook: "",
-    twitter: "",
-    instagram: "",
-    github: ""
+    facebook: "https://www.facebook.com/oskaritoceballos",
+    twitter: "https://www.twitter.com/oskarinmix",
+    instagram: "https://www.instagram.com/oskarinmix",
+    github: "https://www.github.com/djoscarmix",
   });
 
   return (
     <Layout page="home">
-      <section className="mh-home image-bg home-2-img" id="mh-home" style={{ height : '100vh' }}>
-        <div className="img-foverlay img-color-overlay" style={{ height : '100vh' }}>
+      <section
+        className="mh-home image-bg home-2-img"
+        id="mh-home"
+        style={{ height: "100vh" }}
+      >
+        <div
+          className="img-foverlay img-color-overlay"
+          style={{ height: "100vh" }}
+        >
           <div className="container">
             <div className="row section-separator xs-column-reverse vertical-middle-content home-padding">
               <div className="col-sm-6">
@@ -115,6 +124,7 @@ const Home = props => {
           </div>
         </div>
       </section>
+      <GalleryInstagram></GalleryInstagram>
     </Layout>
   );
 };

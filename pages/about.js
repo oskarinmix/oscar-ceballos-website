@@ -10,7 +10,7 @@ const About = () => {
       "Html",
       "Css",
       "Bootstrap 4",
-      'TailwindCSS',
+      "TailwindCSS",
       "Javascript",
       "ReactJs",
       "VueJs",
@@ -22,20 +22,18 @@ const About = () => {
       "SQL",
       "GraphQL",
       "Wordpress",
-    ]
+    ],
   });
 
   return (
     <Layout page="about">
-      <section className="mh-about" id="mh-about" style={{ 'margin-top': "20px" }}>
-        <div
-          className="container"
-          
-        >
-          <div
-            className="row section-separator"
-            
-          >
+      <section
+        className="mh-about"
+        id="mh-about"
+        style={{ "margin-top": "20px" }}
+      >
+        <div className="container">
+          <div className="row section-separator">
             <div className="col-sm-12 col-md-6">
               <div
                 className="mh-about-img shadow-2 wow fadeInUp"
@@ -71,29 +69,29 @@ const About = () => {
                   data-wow-delay="0.3s"
                 >
                   <ul>
-                    {data.skills.map(item => (
-                      <li>
+                    {data.skills.map((item, index) => (
+                      <li key={index}>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <Link href="https://drive.google.com/open?id=1QIStcIuwpsntV3chmfgnrqUdCHLVCf-R">
-                <a
-                  target="_blank"
-                  className="btn btn-fill wow fadeInUp"
-                  data-wow-duration="0.8s"
-                  data-wow-delay="0.4s"
-                >
-                  Downlaod CV <i className="fa fa-download"></i>
-                </a>
+                  <a
+                    target="_blank"
+                    className="btn btn-fill wow fadeInUp"
+                    data-wow-duration="0.8s"
+                    data-wow-delay="0.4s"
+                  >
+                    Downlaod CV <i className="fa fa-download"></i>
+                  </a>
                 </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="mh-service" style={{ 'margin-top': "-160px" }}>
+      <section className="mh-service" style={{ "margin-top": "-160px" }}>
         <div className="container">
           <div className="row section-separator">
             <div
@@ -103,7 +101,7 @@ const About = () => {
             >
               <h2>What I do</h2>
             </div>
-            <div className="col-md-4 col-sm-12" >
+            <div className="col-md-4 col-sm-12">
               <div
                 className="mh-service-item shadow-1 dark-bg wow fadeInUp"
                 data-wow-duration="0.8s"
