@@ -27,8 +27,8 @@ const Contact = () => (
                       <div className="each-info media-body">
                         <h4>Address</h4>
                         <address>
-                          5th Avenue, 34th floor, <br />
-                          New york
+                          Mérida City, <br />
+                          Mérida, Venezuela.
                         </address>
                       </div>
                     </div>
@@ -45,11 +45,11 @@ const Contact = () => (
                       <div className="each-info media-body">
                         <h4>Email</h4>
                         <a href="mailto:yourmail@email.com">
-                          yourmail@email.com
+                          oscaralbertoceballos@gmail.com
                         </a>
                         <br />
                         <a href="mailto:yourmail@email.com">
-                          yourmail@email.com
+                          oscaralbertoceballos@gmail.com
                         </a>
                       </div>
                     </div>
@@ -65,7 +65,7 @@ const Contact = () => (
                       </div>
                       <div className="each-info media-body">
                         <h4>Phone</h4>
-                        <a href="callto:(880)-8976-987">(880)-8976-987</a>
+                        <a href="callto:(+58)412-064-2004">(+58)412-064-2004</a>
                         <br />
                         <a href="callto:(880)-8976-987">(880)-8976-987</a>
                       </div>
@@ -148,7 +148,7 @@ const Contact = () => (
                     <div className="col-sm-6">
                       <div className="text-left text-xs-center">
                         <p>
-                          <a href="templateshub.net">Templates Hub</a>
+                          <a href="#">Oscar Ceballos 2020</a>
                         </p>
                       </div>
                     </div>

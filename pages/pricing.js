@@ -21,7 +21,7 @@ const Pricing = () => (
                 <i className="fa fa-calendar"></i>
                 <h4>Full-time work</h4>
                 <p>I am available for full time</p>
-                <h5>$1500</h5>
+                <h5>$3500</h5>
                 <ul>
                   <li>Web Development</li>
                   <li>Advetising</li>

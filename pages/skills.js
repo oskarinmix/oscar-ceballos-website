@@ -20,12 +20,12 @@ const Skills = () => (
                     <div className="parcial">
                       <div className="info">
                         <div className="nome">Javascript</div>
-                        <div className="percentagem-num">86%</div>
+                        <div className="percentagem-num">96%</div>
                       </div>
                       <div className="progressBar">
                         <div
                           className="percentagem"
-                          style={{ width: "86%" }}
+                          style={{ width: "96%" }}
                         ></div>
                       </div>
                     </div>
@@ -33,13 +33,13 @@ const Skills = () => (
                   <div className="candidatos">
                     <div className="parcial">
                       <div className="info">
-                        <div className="nome">Java</div>
-                        <div className="percentagem-num">46%</div>
+                        <div className="nome">React</div>
+                        <div className="percentagem-num">92%</div>
                       </div>
                       <div className="progressBar">
                         <div
                           className="percentagem"
-                          style={{ width: "46%" }}
+                          style={{ width: "92%" }}
                         ></div>
                       </div>
                     </div>
@@ -47,27 +47,13 @@ const Skills = () => (
                   <div className="candidatos">
                     <div className="parcial">
                       <div className="info">
-                        <div className="nome">Python</div>
-                        <div className="percentagem-num">38%</div>
+                        <div className="nome">Node Js</div>
+                        <div className="percentagem-num">88%</div>
                       </div>
                       <div className="progressBar">
                         <div
                           className="percentagem"
-                          style={{ width: "38%" }}
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="candidatos">
-                    <div className="parcial">
-                      <div className="info">
-                        <div className="nome">PHP</div>
-                        <div className="percentagem-num">17%</div>
-                      </div>
-                      <div className="progressBar">
-                        <div
-                          className="percentagem"
-                          style={{ width: "17%" }}
+                          style={{ width: "88%" }}
                         ></div>
                       </div>
                     </div>
@@ -76,12 +62,26 @@ const Skills = () => (
                     <div className="parcial">
                       <div className="info">
                         <div className="nome">PHP</div>
-                        <div className="percentagem-num">17%</div>
+                        <div className="percentagem-num">77%</div>
                       </div>
                       <div className="progressBar">
                         <div
                           className="percentagem"
-                          style={{ width: "17%" }}
+                          style={{ width: "77%" }}
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="candidatos">
+                    <div className="parcial">
+                      <div className="info">
+                        <div className="nome">Redux</div>
+                        <div className="percentagem-num">77%</div>
+                      </div>
+                      <div className="progressBar">
+                        <div
+                          className="percentagem"
+                          style={{ width: "77%" }}
                         ></div>
                       </div>
                     </div>
