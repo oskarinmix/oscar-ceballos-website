@@ -1,11 +1,11 @@
 import React, { Fragment, useState, useEffect } from "react";
+// import "./galleryinstagram.css";
 const GalleryInstagram = (props) => {
   const [data, setData] = useState();
 
   useEffect(() => {
     const obtenerData = async () => {
       try {
-        // SI sale bien
         const respuesta = await fetch(
           "https://v1.nocodeapi.com/oskarinmix/instagram/RxqwzXwFlBIEYhxo",
           {
@@ -16,21 +16,24 @@ const GalleryInstagram = (props) => {
           }
         );
         const json = await respuesta.json();
-        console.log(json);
         setData(json);
+        localStorage.setItem("data-instagram", JSON.stringify(json));
       } catch (error) {
-        // error
         console.log("error", error);
       }
     };
-    // OBtener la data desde la API
-    obtenerData();
+    const local = localStorage.getItem("data-instagram");
+    if (local) {
+      setData(JSON.parse(local));
+    } else {
+      obtenerData();
+    }
   }, []);
 
   return (
     <React.Fragment>
       <div
-        className="d-flex"
+        className="d-flex instagallery"
         style={{
           height: "100px",
           width: "100%",
@@ -41,12 +44,8 @@ const GalleryInstagram = (props) => {
         {data
           ? data.data.map((item, index) =>
               item.media_type === "IMAGE" ? (
-                <div>
-                  <img
-                    src={item.media_url}
-                    key={index}
-                    style={{ height: "100px" }}
-                  />
+                <div key={index}>
+                  <img src={item.media_url} style={{ height: "100px" }} />
                 </div>
               ) : null
             )

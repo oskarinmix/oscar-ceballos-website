@@ -23,6 +23,7 @@ const About = () => {
       "GraphQL",
       "Wordpress",
     ],
+    cvUrl: "",
   });
 
   return (
@@ -30,10 +31,17 @@ const About = () => {
       <section
         className="mh-about"
         id="mh-about"
-        style={{ "margin-top": "20px" }}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "100vh",
+          paddingTop: "70px",
+        }}
       >
         <div className="container">
-          <div className="row section-separator">
+          <div className="row">
             <div className="col-sm-12 col-md-6">
               <div
                 className="mh-about-img shadow-2 wow fadeInUp"
@@ -76,24 +84,22 @@ const About = () => {
                     ))}
                   </ul>
                 </div>
-                <Link href="https://drive.google.com/open?id=1QIStcIuwpsntV3chmfgnrqUdCHLVCf-R">
-                  <a
-                    target="_blank"
+                <Link href={data.cvUrl}>
+                  <span
                     className="btn btn-fill wow fadeInUp"
                     data-wow-duration="0.8s"
                     data-wow-delay="0.4s"
                   >
                     Downlaod CV <i className="fa fa-download"></i>
-                  </a>
+                  </span>
                 </Link>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section className="mh-service" style={{ "margin-top": "-160px" }}>
-        <div className="container">
-          <div className="row section-separator">
+
+        <div className="container mh-service" style={{ paddingTop: "40px" }}>
+          <div className="row ">
             <div
               className="col-sm-12 text-center section-title wow fadeInUp"
               data-wow-duration="0.8s"

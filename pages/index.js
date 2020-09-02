@@ -124,9 +124,6 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <GalleryInstagram
-        style={{ position: "absolute", bottom: "0" }}
-      ></GalleryInstagram>
     </Layout>
   );
 };

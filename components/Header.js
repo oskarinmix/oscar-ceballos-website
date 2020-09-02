@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 const Header = (props) => {
+  const { page } = props;
   return (
     <React.Fragment>
       <header
@@ -30,7 +31,7 @@ const Header = (props) => {
                 <ul className="navbar-nav mr-auto ml-auto">
                   <li
                     className="nav-item"
-                    className={props.page === "home" ? "active" : ""}
+                    className={page === "home" ? "active" : ""}
                   >
                     <Link href="/">
                       <a className="nav-link">Home</a>
@@ -38,7 +39,7 @@ const Header = (props) => {
                   </li>
                   <li
                     className="nav-item"
-                    className={"about" === props.page ? "active" : ""}
+                    className={"about" === page ? "active" : ""}
                   >
                     <Link href="/about">
                       <a className="nav-link">About</a>
@@ -46,7 +47,7 @@ const Header = (props) => {
                   </li>
                   <li
                     className="nav-item"
-                    className={"skills" === props.page ? "active" : ""}
+                    className={"skills" === page ? "active" : ""}
                   >
                     <Link href="/skills">
                       <a className="nav-link">Skills</a>
@@ -54,7 +55,7 @@ const Header = (props) => {
                   </li>
                   <li
                     className="nav-item"
-                    className={"experiences" === props.page ? "active" : ""}
+                    className={"experiences" === page ? "active" : ""}
                   >
                     <Link href="/experiences">
                       <a className="nav-link">Experiences</a>
@@ -62,7 +63,7 @@ const Header = (props) => {
                   </li>
                   <li
                     className="nav-item"
-                    className={"portfolio" === props.page ? "active" : ""}
+                    className={"portfolio" === page ? "active" : ""}
                   >
                     <Link href="/portfolio">
                       <a className="nav-link">Portfolio</a>
@@ -70,7 +71,7 @@ const Header = (props) => {
                   </li>
                   <li
                     className="nav-item"
-                    className={"pricing" === props.page ? "active" : ""}
+                    className={"pricing" === page ? "active" : ""}
                   >
                     <Link href="/pricing">
                       <a className="nav-link">Pricing</a>
@@ -78,7 +79,7 @@ const Header = (props) => {
                   </li>
                   <li
                     className="nav-item"
-                    className={"blog" === props.page ? "active" : ""}
+                    className={"blog" === page ? "active" : ""}
                   >
                     <Link href="/blog">
                       <a className="nav-link">Blog</a>
@@ -86,7 +87,7 @@ const Header = (props) => {
                   </li>
                   <li
                     className="nav-item"
-                    className={"contact" === props.page ? "active" : ""}
+                    className={"contact" === page ? "active" : ""}
                   >
                     <Link href="/contact">
                       <a className="nav-link">Contact</a>

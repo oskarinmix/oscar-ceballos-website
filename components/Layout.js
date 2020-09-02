@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import Cabecera from "../components/Cabecera";
 import Header from "../components/Header";
 import Scripts from "../components/Scripts";
-const Layout = props => {
+const Layout = (props) => {
   const { page } = props;
 
-  useEffect(function() {
+  useEffect(function () {
     document.getElementsByTagName("body")[0].className =
       "dark-vertion black-bg";
   });
