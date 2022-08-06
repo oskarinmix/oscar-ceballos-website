@@ -1,19 +1,21 @@
 import React, { useState } from "react";
-import Layout from "../components/Layout";
-import InstaFeed from "./instagram";
+
 import GalleryInstagram from "../components/GalleryInstagram";
+import InstaFeed from "./instagram";
+import Layout from "../components/Layout";
+
 const Home = (props) => {
   const [data, setData] = useState({
     name: "Oscar A. Ceballos",
-    title: "Frontend Engineer",
+    title: "Senior Software Engineer",
     email: "oscaralbertoceballos@gmail.com",
-    address: "Mérida, Venezuela",
+    address: "Salt Lake City, United Stated of America",
     image: "/assets/images/hero.png",
-    phone: "+58 412 0642004",
+    phone: "+1 385 549-4053",
     facebook: "https://www.facebook.com/oskaritoceballos",
     twitter: "https://www.twitter.com/oskarinmix",
     instagram: "https://www.instagram.com/oskarinmix",
-    github: "https://www.github.com/djoscarmix",
+    github: "https://www.github.com/oskarinmix",
   });
 
   return (
@@ -124,6 +126,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
+      <InstaFeed />
     </Layout>
   );
 };
